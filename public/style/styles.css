@@ -4,8 +4,13 @@
 /*HEADER*/
 .header { 
     background-color: var(--color-azul);
+    color: white;
+
 }
-.header__a {
+.header__a--logo {
+    text-transform: uppercase;
+}
+.header__a--menu{
 
 }
 .header__nav {
@@ -18,7 +23,8 @@
 
 }
 .nav--principal ul {
-
+    list-style-type: none;
+    display: none;
 }
 /*SECTION--BANNER*/
 .banner {
@@ -26,6 +32,9 @@
 }
 
 /*SECTION--PORTFOLIO*/
+.section--portfolio {
+    ;
+}
 
 /*SECTION--ABOUT*/
 
