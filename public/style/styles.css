@@ -5,13 +5,11 @@
 .header { 
     background-color: var(--color-azul);
     color: white;
-
-}
-.header__a--logo {
     text-transform: uppercase;
-}
-.header__a--menu{
 
+}
+.header__a--menu {
+    color: white;
 }
 .header__nav {
 
@@ -33,7 +31,7 @@
 
 /*SECTION--PORTFOLIO*/
 .section--portfolio {
-    ;
+
 }
 
 /*SECTION--ABOUT*/
