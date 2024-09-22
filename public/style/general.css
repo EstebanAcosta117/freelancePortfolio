@@ -2,9 +2,44 @@ body {
   font-family: "Lato", sans-serif;
   margin: 0;
 }
-h1,
-h2 {
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    
+
+.header,
+section,
+footer{
+  padding: 30px 10px 10px;
 }
+
+h1,
+h2,
+.header__a {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+button{
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+}
+h2{
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.decoration__star {
+  display: flex;
+  font-size: 1.7rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px
+}
+
+.decoration__star hr {
+  width: 100px;
+  border: 3px solid;
+  margin: 20px;
+  border-radius: 5px;
+}
+

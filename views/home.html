@@ -6,14 +6,15 @@
     <title>Freelance Portfolio</title>
     <link rel="stylesheet" href="/style/styles.css">
     <script src="https://kit.fontawesome.com/d44dea81e2.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- cabecera de la página -->
     <header class="header">
       <!-- logotipo/marca -->
       <a class="header__a">freelance portfolio</a>
-      <p class="header__a--menu" href="">menu<i class="fa-solid fa-bars"></i></p>
-      <!-- menu de navegación -->
+      <p class="header__a--menu" href="">menu <i class="fa-solid fa-bars"></i></p>
+    <!-- menu de navegación -->
       <nav class="nav--principal">
         <ul>
           <li>
@@ -35,11 +36,11 @@
         <!-- imagen de perfil -->
         <img src="/images/profile.png" alt="imagen de perfil" />
         <!-- nombre de perfil -->
-        <h1>freelance portfolio</h1>
+        <h1 class="banner__h1">freelance portfolio</h1>
         <!-- adorno estrella -->
-        <div>
+        <div class="decoration__star">
           <hr />
-          <p>estrella</p>
+          <i class="fa-solid fa-star"></i>
           <hr />
         </div>
         <!-- descripción corta del perfil -->
@@ -49,30 +50,30 @@
       <!-- sección de imagenes del portfolio -->
       <section class="section--portfolio">
         <h2>portfolio</h2>
-        <div>
+        <div class="decoration__star">
           <hr />
-          <p>estrella</p>
+          <i class="fa-solid fa-star"></i>
           <hr />
         </div>
-        <div class="home__main__section--portfolio--images">
-          <img src="/images/cabin.png" alt="imagen de cabaña" />
-          <img src="/images/cake.png" alt="imagen de pastel" />
-          <img src="/images/circus.png" alt="imagen de circo" />
-          <img src="/images/game.png" alt="imagen de joystick" />
-          <img src="/images/safe.png" alt="imagen de caja fuerte" />
-          <img src="/images/submarine.png" alt="imagen de submarino" />
+        <div class="box-images--porfolio">
+          <img data-aos="fade-up-left" class="home__portfolio--images" src="/images/cabin.png" alt="imagen de cabaña" />
+          <img data-aos="fade-up" class="home__portfolio--images" src="/images/cake.png" alt="imagen de pastel" />
+          <img data-aos="fade-up-right" class="home__portfolio--images" src="/images/circus.png" alt="imagen de circo" />
+          <img data-aos="fade-down-left" class="home__portfolio--images" src="/images/game.png" alt="imagen de joystick" />
+          <img data-aos="fade-down" class="home__portfolio--images" src="/images/safe.png" alt="imagen de caja fuerte" />
+          <img data-aos="fade-down-right" class="home__portfolio--images" src="/images/submarine.png" alt="imagen de submarino" />
         </div>
       </section>
 
       <!-- seccion acerca de mí -->
-      <section>
+      <section class="section--about">
         <h2 id="about">about</h2>
-        <div>
+        <div class="decoration__star">
           <hr />
-          <p>estrella</p>
+          <i class="fa-solid fa-star"></i>
           <hr />
         </div>
-        <div>
+        <div class="about--p">
           <p>
             Freelance is a free landing page theme created for free use. The
             download includes the complete source files including HTML, CSS, and
@@ -86,11 +87,41 @@
             point!
           </p>
         </div>
+          <div class="form__button">
+            <button class="button--download"><i class="fa-solid fa-download"></i> Download Now!</button>
+        </div>
+      </div>
       </section>
 
       <!-- seccion del formulario de contacto -->
-      <section>
-
+      <section class="section__form">
+        <h2>contact me</h2>
+        <div class="decoration__star">
+          <hr />
+          <i class="fa-solid fa-star"></i>
+          <hr />
+        </div>
+        <form action="" class="form">
+          <div class="form__box">
+            <label class="form__label" for="name">Name</label>
+            <input class="form__control" type="text" id="name" name="name">
+          </div>
+          <div class="form__box">
+            <label class="form__label" for="email">Email Address</label>
+            <input class="form__control" type="email" id="email" name="email">
+          </div>
+          <div class="form__box">
+            <label class="form__label" for="phone">Phone Number</label>
+            <input class="form__control" type="tel" id="phone" name="phone">
+          </div>
+          <div class="form__box">
+            <label class="form__label" for="message">Message</label>
+            <textarea rows="5" class="form__control" name="message" id="message"></textarea>
+          </div>
+          <div>
+            <button class="form--button" type="submit">Send</button>
+          </div>
+        </form>
       </section>
     </main>
     <!-- pie de pagina (footer) -->
@@ -105,13 +136,13 @@
         <!-- redes sociales -->
         <article>
             <h3>around the web</h3>
-            <div>
-                <a href="">facebook</a>
-                <a href="">google</a>
-                <a href="">twitter</a>
-                <a href="">linkedin</a>
-                <a href="">dribbble</a>
-            </div>
+            <div class="box-redes--footer">
+              <a href="" ><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href=""><i class="fa-brands fa-dribbble"></i></a>
+          </div>
         </article>
         <!-- acerca de mi -->
         <article>
@@ -120,5 +151,9 @@
         </article>
     </section>
      </footer>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
   </body>
 </html>
